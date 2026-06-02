@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saransh Baniyal — Software Developer</title>
+  <meta name="description" content="Portfolio of Saransh Baniyal — Software Developer specializing in Python, FastAPI, backend systems, and AI. Building robust and scalable solutions." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saransh Baniyal — Software Developer" />
+  <meta property="og:description" content="Software Developer specializing in Python, FastAPI, backend systems, and AI." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saransh Baniyal — Software Developer" />
+  <meta name="twitter:description" content="Software Developer specializing in Python, FastAPI, backend systems, and AI." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ====== Navigation ====== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <a href="#hero" class="nav-link active">Home</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#thoughts" class="nav-link">Thoughts</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- ====== Main Layout ====== -->
+  <div class="container">
+    <div class="main-layout">
+
+      <!-- ===== Left: Profile Sidebar ===== -->
+      <aside class="profile-sidebar">
+        <div class="profile-card">
+          <div class="profile-image-wrapper">
+            <img src="assets/profile-photo.jpg" alt="Saransh Baniyal" loading="eager" />
+          </div>
+          <div class="profile-info">
+            <h2 class="profile-name">Saransh Baniyal</h2>
+            <p class="profile-title">Software Developer</p>
+            <p class="profile-location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Delhi, India
+            </p>
+            <a href="mailto:saranshbaniyal14@gmail.com" class="profile-cta" id="profile-cta">
+              Let's Talk
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com/SaranshBaniyal" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span class="tooltip">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/saransh-baniyal" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="tooltip">LinkedIn</span>
+          </a>
+          <a href="mailto:saranshbaniyal14@gmail.com" class="social-link" id="social-email" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="tooltip">Email</span>
+          </a>
+          <a href="https://bento.me/saransh-baniyal" target="_blank" rel="noopener noreferrer" class="social-link" id="social-bento" aria-label="Bento">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <span class="tooltip">Bento</span>
+          </a>
+          <a href="tel:+919760107102" class="social-link" id="social-phone" aria-label="Phone">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span class="tooltip">+91 9760107102</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ===== Right: Content Area ===== -->
+      <main class="content-area">
+
+        <!-- ====== Hero Section ====== -->
+        <section id="hero">
+          <div class="hero-content">
+            <h1 class="hero-heading reveal">
+              Building Robust &amp;<br><span class="highlight">Scalable Backend</span> Systems
+            </h1>
+            <p class="hero-description reveal reveal-delay-1">
+              Software developer with strong expertise in Python and FastAPI. Actively exploring innovative technologies like blockchain, distributed systems, IoT, and AI, with hands-on experience applying them to practical solutions.
+            </p>
+
+            <div class="stats-row reveal reveal-delay-2">
+              <div class="stat-item">
+                <span class="stat-number" data-target="3" data-prefix="+">0</span>
+                <span class="stat-label">Years of<br>Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="30" data-prefix="+">0</span>
+                <span class="stat-label">REST APIs<br>Built</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="2000" data-prefix="">0</span>
+                <span class="stat-label">RPS<br>Scaled To</span>
+              </div>
+            </div>
+
+            <div class="hero-actions reveal reveal-delay-3">
+              <a href="mailto:saranshbaniyal14@gmail.com" class="btn-primary" id="hero-cta">
+                Let's Talk
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="https://github.com/SaranshBaniyal" target="_blank" rel="noopener noreferrer" class="btn-secondary" id="hero-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View GitHub
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Tech Marquee ====== -->
+        <div class="marquee-section reveal">
+          <div class="marquee-track">
+            <span class="marquee-item"><span class="dot"></span>Python</span>
+            <span class="marquee-item"><span class="dot"></span>FastAPI</span>
+            <span class="marquee-item"><span class="dot"></span>Django</span>
+            <span class="marquee-item"><span class="dot"></span>PostgreSQL</span>
+            <span class="marquee-item"><span class="dot"></span>Docker</span>
+            <span class="marquee-item"><span class="dot"></span>AWS</span>
+            <span class="marquee-item"><span class="dot"></span>Redis</span>
+            <span class="marquee-item"><span class="dot"></span>Kubernetes</span>
+            <span class="marquee-item"><span class="dot"></span>Airflow</span>
+            <span class="marquee-item"><span class="dot"></span>C++</span>
+            <span class="marquee-item"><span class="dot"></span>Kotlin</span>
+            <span class="marquee-item"><span class="dot"></span>MongoDB</span>
+            <span class="marquee-item"><span class="dot"></span>DuckDB</span>
+            <span class="marquee-item"><span class="dot"></span>Git</span>
+            <span class="marquee-item"><span class="dot"></span>Linux</span>
+          </div>
+        </div>
+
+        <!-- ====== Projects Section ====== -->
+        <section id="projects">
+          <div class="section-header reveal">
+            <span class="section-label">My Work</span>
+            <h2 class="section-title">Recent Projects &amp;<br>Achievements</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Habito -->
+            <div class="project-card reveal reveal-delay-1" id="project-habito">
+              <div class="project-card-image">
+                <div class="project-placeholder-visual">📸</div>
+              </div>
+              <a href="https://github.com/SaranshBaniyal" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="View Habito on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <div class="project-card-body">
+                <h3 class="project-card-title">Habito</h3>
+                <p class="project-card-desc">Image detection-based habit tracking app with AI verification using vector embeddings and PostGIS for location-based leaderboards.</p>
+                <div class="project-tags">
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">PostgreSQL</span>
+                  <span class="project-tag">Kotlin</span>
+                  <span class="project-tag">Docker</span>
+                  <span class="project-tag">BLIP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Swassh Bot -->
+            <div class="project-card reveal reveal-delay-2" id="project-swassh">
+              <div class="project-card-image">
+                <div class="project-placeholder-visual">🤖</div>
+              </div>
+              <a href="https://github.com/SaranshBaniyal" target="_blank" rel="noopener noreferrer" class="project-card-link" aria-label="View Swassh Bot on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <div class="project-card-body">
+                <h3 class="project-card-title">Swassh Bot</h3>
+                <p class="project-card-desc">WhatsApp chatbot for appointment booking with automated scheduling, webhook integration, and a Django admin panel for a local car wash.</p>
+                <div class="project-tags">
+                  <span class="project-tag">WhatsApp Flows</span>
+                  <span class="project-tag">Django</span>
+                  <span class="project-tag">PostgreSQL</span>
+                  <span class="project-tag">AWS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Placeholder -->
+            <div class="project-card reveal reveal-delay-3" id="project-placeholder-1">
+              <div class="project-card-image">
+                <div class="project-placeholder-visual">🔮</div>
+              </div>
+              <a href="#" class="project-card-link" aria-label="View project">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <div class="project-card-body">
+                <h3 class="project-card-title">Coming Soon</h3>
+                <p class="project-card-desc">An exciting new project is in the works. Stay tuned for updates on this upcoming build.</p>
+                <div class="project-tags">
+                  <span class="project-tag">TBD</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Placeholder -->
+            <div class="project-card reveal reveal-delay-4" id="project-placeholder-2">
+              <div class="project-card-image">
+                <div class="project-placeholder-visual">⚡</div>
+              </div>
+              <a href="#" class="project-card-link" aria-label="View project">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <div class="project-card-body">
+                <h3 class="project-card-title">Coming Soon</h3>
+                <p class="project-card-desc">Another project is being brewed. Check back later for details on this upcoming creation.</p>
+                <div class="project-tags">
+                  <span class="project-tag">TBD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Skills / Tools Section ====== -->
+        <section id="skills">
+          <div class="section-header reveal">
+            <span class="section-label">Tech Stack</span>
+            <h2 class="section-title">Top-Tier Tools for<br>Exceptional Results</h2>
+          </div>
+
+          <div class="tools-grid">
+            <div class="tool-card reveal reveal-delay-1" id="tool-frameworks">
+              <div class="tool-card-icon">⚙️</div>
+              <span class="tool-card-name">Frameworks &amp; Libraries</span>
+              <span class="tool-card-category">Backend Development</span>
+              <div class="tool-card-items">
+                <span class="tool-item">FastAPI</span>
+                <span class="tool-item">SQLAlchemy</span>
+                <span class="tool-item">Django</span>
+                <span class="tool-item">Pydantic</span>
+                <span class="tool-item">Celery</span>
+              </div>
+            </div>
+
+            <div class="tool-card reveal reveal-delay-2" id="tool-languages">
+              <div class="tool-card-icon">💻</div>
+              <span class="tool-card-name">Languages</span>
+              <span class="tool-card-category">Programming</span>
+              <div class="tool-card-items">
+                <span class="tool-item">Python</span>
+                <span class="tool-item">C++</span>
+                <span class="tool-item">Kotlin</span>
+              </div>
+            </div>
+
+            <div class="tool-card reveal reveal-delay-3" id="tool-databases">
+              <div class="tool-card-icon">🗄️</div>
+              <span class="tool-card-name">Databases</span>
+              <span class="tool-card-category">Data Storage &amp; Caching</span>
+              <div class="tool-card-items">
+                <span class="tool-item">PostgreSQL</span>
+                <span class="tool-item">DuckDB</span>
+                <span class="tool-item">Redis</span>
+                <span class="tool-item">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="tool-card reveal reveal-delay-4" id="tool-devops">
+              <div class="tool-card-icon">☁️</div>
+              <span class="tool-card-name">Cloud &amp; DevOps</span>
+              <span class="tool-card-category">Deployment &amp; Infrastructure</span>
+              <div class="tool-card-items">
+                <span class="tool-item">AWS</span>
+                <span class="tool-item">Docker</span>
+                <span class="tool-item">Linux</span>
+                <span class="tool-item">GitHub Actions</span>
+                <span class="tool-item">Kubernetes</span>
+                <span class="tool-item">MinIO</span>
+              </div>
+            </div>
+
+            <div class="tool-card reveal" id="tool-tools">
+              <div class="tool-card-icon">🛠️</div>
+              <span class="tool-card-name">Developer Tools</span>
+              <span class="tool-card-category">Productivity &amp; Monitoring</span>
+              <div class="tool-card-items">
+                <span class="tool-item">Git</span>
+                <span class="tool-item">Airflow</span>
+                <span class="tool-item">DBT</span>
+                <span class="tool-item">Postman</span>
+                <span class="tool-item">Teamcity</span>
+                <span class="tool-item">Grafana</span>
+                <span class="tool-item">Prometheus</span>
+              </div>
+            </div>
+
+            <div class="tool-card reveal" id="tool-hardware">
+              <div class="tool-card-icon">🔌</div>
+              <span class="tool-card-name">IoT &amp; Testing</span>
+              <span class="tool-card-category">Hardware &amp; Performance</span>
+              <div class="tool-card-items">
+                <span class="tool-item">Raspberry Pi</span>
+                <span class="tool-item">Arduino</span>
+                <span class="tool-item">JMeter</span>
+                <span class="tool-item">k6</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Experience Section ====== -->
+        <section id="experience">
+          <div class="section-header reveal">
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">Professional Journey</h2>
+          </div>
+
+          <div class="experience-list">
+            <!-- Experience 1 -->
+            <div class="experience-item reveal" id="exp-synthlane">
+              <div class="experience-date">Sep 2025 — Present</div>
+              <div class="experience-content">
+                <h3 class="experience-role">Software Engineer</h3>
+                <p class="experience-company">Synthlane</p>
+                <p class="experience-location">Noida</p>
+                <ul class="experience-bullets">
+                  <li>Led performance engineering for a distributed stack (API gateway + ML services), scaling to 2000 RPS at p99 &lt; 180 ms.</li>
+                  <li>Built an AI Voice Calling Platform with RBAC for Real-Estate and Insurance lead qualification.</li>
+                  <li>Engineered a multi-provider AI gateway with Celery for long-running image/video tasks and centralized usage auditing.</li>
+                  <li>Built VigilantX, a government-focused malware detection and analysis platform combining multiple open-source cybersecurity tools.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="experience-item reveal" id="exp-kubik">
+              <div class="experience-date">Jan 2025 — Jul 2025</div>
+              <div class="experience-content">
+                <h3 class="experience-role">Software Engineer</h3>
+                <p class="experience-company">Kubik Labs</p>
+                <p class="experience-location">Gurugram</p>
+                <ul class="experience-bullets">
+                  <li>Optimized analytical workloads with Parquet, Hive partitioning, and DuckDB, achieving 40% faster query execution on large datasets.</li>
+                  <li>Engineered Airflow-based ETL pipelines to ingest blockchain data every 15 minutes, achieving near real-time accuracy.</li>
+                  <li>Built 30+ REST APIs and WebSockets powering KubikScan, streaming real-time and historical data across 4 Cosmos SDK blockchains.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="experience-item reveal" id="exp-droidsize">
+              <div class="experience-date">Jul 2023 — Nov 2023</div>
+              <div class="experience-content">
+                <h3 class="experience-role">Backend Engineer Intern</h3>
+                <p class="experience-company">Droidsize Technologies</p>
+                <p class="experience-location">Remote</p>
+                <ul class="experience-bullets">
+                  <li>Created 10+ CRUD APIs for Chargespot, an EV charger locator application.</li>
+                  <li>Configured and customized the Django Admin panel to manage users, locations, chargers, and vehicles efficiently.</li>
+                  <li>Achieved 72% code coverage for the backend by writing unit and integration tests.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Education Section ====== -->
+        <section id="education">
+          <div class="section-header reveal">
+            <span class="section-label">Education</span>
+            <h2 class="section-title">Academic Background</h2>
+          </div>
+
+          <div class="education-grid">
+            <div class="education-card reveal reveal-delay-1" id="edu-btech">
+              <p class="education-degree">B.Tech, IT</p>
+              <p class="education-institute">Indian Institute of Information Technology, Una</p>
+              <div class="education-meta">
+                <span class="education-year">2021 – 2025</span>
+                <span class="education-grade">8.3 CGPA</span>
+              </div>
+            </div>
+            <div class="education-card reveal reveal-delay-2" id="edu-xii">
+              <p class="education-degree">Senior Secondary (XII)</p>
+              <p class="education-institute">ISC Board, St. Jude's School, Dehradun</p>
+              <div class="education-meta">
+                <span class="education-year">2020</span>
+                <span class="education-grade">94.3%</span>
+              </div>
+            </div>
+            <div class="education-card reveal reveal-delay-3" id="edu-x">
+              <p class="education-degree">Secondary (X)</p>
+              <p class="education-institute">ICSE Board, St. Jude's School, Dehradun</p>
+              <div class="education-meta">
+                <span class="education-year">2018</span>
+                <span class="education-grade">95.0%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Achievements Section ====== -->
+        <section id="achievements">
+          <div class="section-header reveal">
+            <span class="section-label">Achievements</span>
+            <h2 class="section-title">Highlights &amp; Contributions</h2>
+          </div>
+
+          <div class="achievements-list">
+            <div class="achievement-item reveal" id="ach-frosthack">
+              <div class="achievement-icon">🏆</div>
+              <p class="achievement-text">Ranked <strong>5th out of 65 teams</strong> in FrostHack 2023, annual hackathon conducted by IIT Mandi.</p>
+            </div>
+            <div class="achievement-item reveal" id="ach-progothon">
+              <div class="achievement-icon">🥈</div>
+              <p class="achievement-text"><strong>First Runner Up</strong> in Pro-go-thon 2022, annual hackathon conducted by IIIT Una.</p>
+            </div>
+            <div class="achievement-item reveal" id="ach-opensource">
+              <div class="achievement-icon">🌐</div>
+              <p class="achievement-text">Open-source exposure through contributions to <strong>MetaCall</strong> and <strong>3× Hacktoberfest</strong> participation.</p>
+            </div>
+            <div class="achievement-item reveal" id="ach-coding">
+              <div class="achievement-icon">💡</div>
+              <p class="achievement-text">Active on competitive programming platforms — <strong>LeetCode</strong>, <strong>GeeksforGeeks</strong>, <strong>CodeChef</strong>.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== FAQ Section ====== -->
+        <section id="faq">
+          <div class="section-header reveal">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently Asked<br>Questions</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item reveal" id="faq-1">
+              <button class="faq-question" aria-expanded="false">
+                What is your area of expertise?
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p class="faq-answer-inner">I specialize in backend development with Python and FastAPI, building high-performance, scalable APIs. I also have experience with Django, blockchain data pipelines, AI integrations, and distributed system architecture.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" id="faq-2">
+              <button class="faq-question" aria-expanded="false">
+                What technologies do you work with?
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p class="faq-answer-inner">My core stack includes Python, FastAPI, PostgreSQL, Docker, and AWS. I also work with Redis, MongoDB, DuckDB, Airflow, Kubernetes, and have hands-on experience with IoT devices like Raspberry Pi and Arduino.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" id="faq-3">
+              <button class="faq-question" aria-expanded="false">
+                Are you open to freelance or collaboration?
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p class="faq-answer-inner">Absolutely! I'm always open to exciting projects, collaborations, and open-source contributions. Feel free to reach out via email or LinkedIn, and let's discuss how we can work together.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" id="faq-4">
+              <button class="faq-question" aria-expanded="false">
+                How do you approach system design?
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p class="faq-answer-inner">I start with understanding requirements and constraints, then design with scalability, maintainability, and performance in mind. I leverage proven patterns — RESTful architecture, event-driven pipelines, caching layers, and load testing — to ensure the system performs reliably under real-world conditions.</p>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" id="faq-5">
+              <button class="faq-question" aria-expanded="false">
+                What tools do you use for testing and monitoring?
+                <span class="faq-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <p class="faq-answer-inner">For performance testing I use JMeter and k6. For monitoring and observability, I work with Grafana and Prometheus. I also use Postman and pytest extensively for API testing and achieving strong code coverage.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Blog / Thoughts Section ====== -->
+        <section id="thoughts">
+          <div class="section-header reveal">
+            <span class="section-label">Blog</span>
+            <h2 class="section-title">Engineering Thoughts and<br><span class="highlight">Perspectives</span></h2>
+          </div>
+
+          <div class="blog-grid">
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="blog-card reveal reveal-delay-1" id="blog-1">
+              <div class="blog-card-image">
+                <img src="assets/blog-1.png" alt="Scaling APIs to 2000 RPS" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-card-date">May 20, 2025</span>
+                <h3 class="blog-card-title">Scaling APIs to 2000 RPS: Lessons from the Trenches</h3>
+              </div>
+            </a>
+
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="blog-card reveal reveal-delay-2" id="blog-2">
+              <div class="blog-card-image">
+                <img src="assets/blog-2.png" alt="Building Real-Time Data Pipelines" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-card-date">Apr 8, 2025</span>
+                <h3 class="blog-card-title">Building Real-Time Data Pipelines with Airflow &amp; DuckDB</h3>
+              </div>
+            </a>
+
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="blog-card reveal reveal-delay-3" id="blog-3">
+              <div class="blog-card-image">
+                <img src="assets/blog-3.png" alt="Distributed Systems" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-card-date">Mar 15, 2025</span>
+                <h3 class="blog-card-title">How Distributed Systems Changed How I Think About Software</h3>
+              </div>
+            </a>
+
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="blog-card reveal reveal-delay-4" id="blog-4">
+              <div class="blog-card-image">
+                <img src="assets/blog-4.png" alt="AI in Backend Engineering" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-card-date">Feb 28, 2025</span>
+                <h3 class="blog-card-title">Integrating AI into Backend Engineering Workflows</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ====== Contact Section ====== -->
+        <section id="contact">
+          <div class="contact-card reveal">
+            <h2 class="contact-title">Let's<br>Collaborate</h2>
+            <p class="contact-desc">Have a project in mind or want to explore a collaboration? I'd love to hear from you. Reach out and let's build something great together.</p>
+            <div class="contact-actions">
+              <a href="mailto:saranshbaniyal14@gmail.com" class="contact-link" id="contact-email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                saranshbaniyal14@gmail.com
+              </a>
+              <a href="https://linkedin.com/in/saransh-baniyal" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/SaranshBaniyal" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="tel:+919760107102" class="contact-link" id="contact-phone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                +91 9760107102
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <p class="footer-text">© 2025 Saransh Baniyal. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
